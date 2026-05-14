@@ -5,78 +5,185 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy – FLUX</title>
   <style>
-    :root { --bg:#0C1B2E; --card:#111E30; --text:#E0E8F0; --sub:#8FA3B8; --blue:#4DA3FF; --border:#1E3250; }
-    @media (prefers-color-scheme: light) {
-      :root { --bg:#F2F5F9; --card:#FFFFFF; --text:#111827; --sub:#6B7280; --blue:#007AFF; --border:#D1D9E6; }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 15px; line-height: 1.75; padding: 24px 20px 60px; max-width: 680px; margin: 0 auto; }
-    header { text-align: center; padding: 32px 0 28px; border-bottom: 1px solid var(--border); margin-bottom: 28px; }
-    header h1 { font-size: 26px; font-weight: 800; letter-spacing: -.5px; }
-    header p { font-size: 13px; color: var(--sub); margin-top: 6px; }
-    h2 { font-size: 15px; font-weight: 700; color: var(--blue); margin: 28px 0 8px; text-transform: uppercase; letter-spacing: .4px; }
-    p { color: var(--sub); margin-bottom: 12px; }
-    ul { color: var(--sub); padding-left: 20px; margin-bottom: 12px; }
-    ul li { margin-bottom: 5px; }
-    strong { color: var(--text); font-weight: 600; }
-    a { color: var(--blue); text-decoration: none; }
-    footer { margin-top: 40px; text-align: center; font-size: 12px; color: var(--sub); }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+         background:#0d0d0d;color:#e0e0e0;line-height:1.7;padding:24px 20px 60px}
+    .wrap{max-width:720px;margin:0 auto}
+    h1{font-size:1.8rem;font-weight:700;color:#ffffff;margin-bottom:6px}
+    .subtitle{font-size:.9rem;color:#888;margin-bottom:36px}
+    h2{font-size:1.1rem;font-weight:600;color:#ffffff;margin:32px 0 10px;
+       padding-left:12px;border-left:3px solid #4f8ef7}
+    p{margin-bottom:14px;color:#ccc;font-size:.95rem}
+    ul{margin:0 0 14px 20px;color:#ccc;font-size:.95rem}
+    ul li{margin-bottom:6px}
+    a{color:#4f8ef7;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .badge{display:inline-block;background:#1a1a2e;border:1px solid #333;
+           border-radius:8px;padding:10px 16px;margin-bottom:28px;font-size:.85rem;color:#aaa}
+    hr{border:none;border-top:1px solid #222;margin:40px 0}
+    .lang-switch{text-align:right;margin-bottom:16px;font-size:.85rem}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Privacy Policy</h1>
-    <p>FLUX · Last updated: May 2026</p>
-  </header>
+<div class="wrap">
 
-  <h2>1. Data Controller</h2>
-  <p>The data controller is the developer of the FLUX application. For any request regarding personal data, contact: <a href="mailto:flux.support.app@gmail.com">flux.support.app@gmail.com</a></p>
+  <div class="lang-switch">
+    <a href="privacy-policy.html">🇮🇹 Versione italiana</a>
+  </div>
 
-  <h2>2. Data Collected</h2>
-  <p>The app collects and processes the following data:</p>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Last updated: May 14, 2025 &nbsp;·&nbsp; App: FLUX – Trading Journal</p>
+
+  <div class="badge">
+    📋 Quick summary: FLUX has no servers of its own. All your data stays on
+    your device. We show ads via Google AdMob and ask for your consent before
+    any tracking.
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>
+    FLUX – Trading Journal ("the App", "we") is an iOS application developed
+    by an independent solo developer. You can reach us at:
+    <a href="mailto:martin.evertovskis@gmail.com">martin.evertovskis@gmail.com</a>
+  </p>
+
+  <h2>2. Data we collect and how we use it</h2>
+
+  <p><strong>2.1 Data stored locally on your device</strong></p>
+  <p>
+    FLUX does not have a backend or remote database. All data you enter is
+    stored exclusively in localStorage on your device via WKWebView. This data
+    includes:
+  </p>
   <ul>
-    <li><strong>Identification data:</strong> first name, last name, email address;</li>
-    <li><strong>Usage data:</strong> trading operations entered by the user (pair, direction, P&amp;L, dates, times), goals and personalised settings.</li>
+    <li>First name, last name and email address used for registration</li>
+    <li>Password (stored locally in localStorage — never transmitted to external servers)</li>
+    <li>Profile photo (compressed and saved as a JPEG image in localStorage)</li>
+    <li>Trades entered (pair, direction, dates, lot size, result, etc.)</li>
+    <li>Trading goals and daily targets</li>
+    <li>Trading diary notes</li>
+    <li>Language and theme settings</li>
+    <li>Sub-account information (names and associated data)</li>
+  </ul>
+  <p>
+    This data stays on your device and is deleted if you uninstall the App or
+    clear the App's data from iOS Settings.
+  </p>
+
+  <p><strong>2.2 Advertising – Google AdMob</strong></p>
+  <p>
+    The App displays advertisements via Google AdMob (Google LLC). AdMob may
+    collect data to personalise ads in accordance with its own
+    <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.
+    Before any tracking, the App:
+  </p>
+  <ul>
+    <li>Requests your consent via Google's UMP (User Messaging Platform) dialog,
+        compliant with GDPR and CCPA</li>
+    <li>Requests the App Tracking Transparency (ATT) permission on iOS 14+</li>
+  </ul>
+  <p>
+    If you decline, AdMob will continue to show non-personalised ads. You can
+    revoke consent at any time in iOS Settings
+    (<em>Settings &gt; Privacy &gt; Tracking</em>).
+  </p>
+  <p>
+    AdMob uses SKAdNetwork for conversion measurement on iOS, which does not
+    require personally identifiable data.
+  </p>
+
+  <p><strong>2.3 Camera and photo library</strong></p>
+  <p>
+    The "Profile Photo" feature lets you take a photo with your camera or choose
+    an image from your photo library. Access occurs only when you explicitly
+    request it. The image is:
+  </p>
+  <ul>
+    <li>Compressed to a maximum of 400×400 pixels in JPEG format (75% quality)</li>
+    <li>Saved locally in localStorage on your device</li>
+    <li>Never transmitted to any external server</li>
+  </ul>
+  <p>
+    iOS will ask for your permission the first time you access these features.
+    You can revoke permissions in <em>Settings &gt; FLUX &gt; Camera / Photos</em>.
+  </p>
+
+  <p><strong>2.4 Files and attachments</strong></p>
+  <p>
+    Some App features may allow you to select files from your device (e.g. to
+    import data). Files are processed locally and are not uploaded to remote
+    servers.
+  </p>
+
+  <h2>3. Data we do NOT collect</h2>
+  <ul>
+    <li>We do not collect our own usage or analytics data</li>
+    <li>We do not send data to our own servers</li>
+    <li>We do not share personal data with third parties (other than AdMob,
+        as described above)</li>
+    <li>We do not use our own profiling cookies</li>
   </ul>
 
-  <h2>3. Purpose of Processing</h2>
-  <p>Data is processed exclusively to:</p>
+  <h2>4. Legal basis for processing (GDPR)</h2>
+  <p>
+    For users in the European Union, the legal basis for processing local data
+    is the <strong>performance of a contract</strong> (Art. 6(1)(b) GDPR), as
+    the data is necessary to provide the App's features. For personalised
+    advertising, the legal basis is <strong>consent</strong> (Art. 6(1)(a)
+    GDPR), which you may withdraw at any time.
+  </p>
+
+  <h2>5. Your rights</h2>
+  <p>
+    Since data is stored locally on your device, you can:
+  </p>
   <ul>
-    <li>provide and manage the trade journal service;</li>
-    <li>allow access to the account;</li>
-    <li>calculate statistics and forecasts requested by the user.</li>
+    <li><strong>Access</strong> your data directly within the App</li>
+    <li><strong>Delete</strong> your data by uninstalling the App or clearing
+        the App's data in iOS Settings</li>
+    <li><strong>Edit</strong> your data using the profile editing features in
+        the App</li>
+    <li><strong>Withdraw consent</strong> for personalised ads in
+        <em>Settings &gt; Privacy &gt; Tracking</em></li>
   </ul>
+  <p>
+    For any privacy-related requests, please write to:
+    <a href="mailto:martin.evertovskis@gmail.com">martin.evertovskis@gmail.com</a>
+  </p>
 
-  <h2>4. Legal Basis</h2>
-  <p>Processing is based on the user's explicit consent (Art. 6(1)(a) GDPR), provided at the time of account creation.</p>
+  <h2>6. Data security</h2>
+  <p>
+    Local data is protected by iOS's app sandbox, which prevents other apps
+    from accessing it. We recommend protecting your device with a passcode or
+    Face ID/Touch ID. Your FLUX account password is stored locally and is never
+    transmitted to external servers.
+  </p>
 
-  <h2>5. Data Retention</h2>
-  <p>All data is stored exclusively on the user's device (local storage). No data is transmitted to external servers. Data is deleted upon app uninstallation or through the "Delete all trades" function in settings.</p>
+  <h2>7. Children</h2>
+  <p>
+    The App is not intended for children under 13 (or under 16 in the EU). We
+    do not knowingly collect data from minors. If you are aware of a minor using
+    the App, please contact us at the address provided.
+  </p>
 
-  <h2>6. Third-Party Disclosure</h2>
-  <p>Personal data is not shared, sold or disclosed to third parties for any purpose.</p>
+  <h2>8. Changes to this Privacy Policy</h2>
+  <p>
+    We may update this policy periodically. When we do, we update the date at
+    the top of this page. We encourage you to review it periodically. Continued
+    use of the App after changes constitutes acceptance of the new policy.
+  </p>
 
-  <h2>7. User Rights (GDPR)</h2>
-  <p>Under Articles 15–22 of the GDPR, the user has the right to:</p>
-  <ul>
-    <li><strong>Access:</strong> obtain information about their data;</li>
-    <li><strong>Rectification:</strong> correct inaccurate data;</li>
-    <li><strong>Erasure</strong> ("right to be forgotten"): request deletion of their data;</li>
-    <li><strong>Portability:</strong> receive their data in a structured format;</li>
-    <li><strong>Objection:</strong> object to processing;</li>
-    <li><strong>Withdrawal of consent:</strong> at any time, without affecting the lawfulness of prior processing.</li>
-  </ul>
-  <p>To exercise these rights: <a href="mailto:flux.support.app@gmail.com">flux.support.app@gmail.com</a></p>
+  <h2>9. Contact</h2>
+  <p>
+    For privacy questions or requests:<br>
+    📧 <a href="mailto:martin.evertovskis@gmail.com">martin.evertovskis@gmail.com</a>
+  </p>
 
-  <h2>8. Minimum Age</h2>
-  <p>The service is reserved for persons aged at least 16 (Art. 8 GDPR – Italy). Use by persons under 16 without parental or guardian consent is not permitted.</p>
+  <hr>
+  <p style="font-size:.8rem;color:#555;text-align:center">
+    © 2025 FLUX – Trading Journal. All rights reserved.
+  </p>
 
-  <h2>9. Changes to this Policy</h2>
-  <p>This policy may be updated. Users will be notified through the app of any significant changes.</p>
-
-  <h2>10. Supervisory Authority</h2>
-  <p>The user has the right to lodge a complaint with the Italian Data Protection Authority (<a href="https://www.garanteprivacy.it" target="_blank">garanteprivacy.it</a>).</p>
-
-  <footer>© 2026 FLUX – All rights reserved</footer>
+</div>
 </body>
 </html>
